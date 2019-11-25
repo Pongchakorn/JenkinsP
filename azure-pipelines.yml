@@ -19,6 +19,6 @@ steps:
   displayName: 'Run a multi-line script'
 
 - script: |
-    echo katalonc -noSplash -runMode=console -projectPath="C:\Users\IT-Tester\Desktop\Tester\Automate Test\JenkinsP\JenkinsP.prj" -retry=0 -testSuitePath="Test Suites/JenkinsTest" -executionProfile="default" -browserType="Chrome" -apiKey="d2c89fd3-17fa-4673-bb95-a98c9ab11b61"
+    echo -projectPath="C:\Users\IT-Tester\Desktop\Tester\Automate Test\JenkinsP\JenkinsP.prj" -retry=0 -testSuitePath="Test Suites/JenkinsTest" -executionProfile="default" -browserType="Chrome" -apiKey="d2c89fd3-17fa-4673-bb95-a98c9ab11b61"
     echo Finish
   displayName: 'Run a multi2-line script'
