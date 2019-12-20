@@ -6,12 +6,14 @@
 trigger:
 - master
 
+pool:
+  vmImage: 'vs2017-win2016'
+
 jobs:
-- job: myJob
-  timeoutInMinutes: 10
-
-  pool:
-    vmImage: 'vs2017-win2016'
-
+- job: A
   steps:
-  - bash: echo "Hello world"
+  - bash: echo "A"
+
+- job: B
+  steps:
+  - bash: echo "B"
